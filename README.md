@@ -1,21 +1,19 @@
-# bun-react-template
+# Chronic Kidney Disease Tool  
 
-To install dependencies:
+This chronic kidney disease tool aims to help patients and clinicians determine the current stage of kidney disease.  
 
-```bash
-bun install
-```
+## Application Deployment  
 
-To start a development server:
+When you're ready, start your application by running:  
+`docker compose up --build`  
 
-```bash
-bun dev
-```
+To deploy to the cloud:  
+1. First build your image:  
+`docker build -t myapp .`  
+If your cloud uses a different CPU architecture than your development machine (e.g., you are on a Mac M1 and your cloud provider is amd64), build for that platform instead:  
+`docker build --platform=linux/amd64 -t myapp .`  
 
-To run for production:
+2. Then push it to your registry:  
+`docker push myregistry.com/myapp`  
 
-```bash
-bun start
-```
-
-This project was created using `bun init` in bun v1.2.4. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+For more details see Docker's documentation about building and pushing images.
