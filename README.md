@@ -1,6 +1,6 @@
 # Chronic Kidney Disease Tool  
 
-This chronic kidney disease tool aims to help patients and clinicians determine the current stage of kidney disease.  
+This ckd aims to help patients and clinicians determine the current stage of kidney disease.  
 
 ## Application Deployment  
 
@@ -17,3 +17,4 @@ If your cloud uses a different CPU architecture than your development machine (e
 `docker push myregistry.com/myapp`  
 
 For more details see Docker's documentation about building and pushing images.
+
